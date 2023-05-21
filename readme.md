@@ -10,7 +10,20 @@ First I had to create the camera, and identify it in my code [Imgur](https://img
 
 ## Running this project
 
-1. Log in to the Jupyter Lab website, open the classification_interactive.ipynb, dataset.py, utils.py, and all the folders. Then run all cells except for the last one, and then click on all the 3 different categories, set epoxy to 10 for each, and train. Then test it out!
+1. Turn on the nano, go into putty, log in a nvidia, type:
+
+  mkdir -p ~/nvdli-data
+  
+  echo "sudo docker run --runtime nvidia -it --rm --network host \
+    --volume ~/nvdli-data:/nvdli-nano/data \
+    --device /dev/video0 \
+    nvcr.io/nvidia/dli/dli-nano-ai:v2.0.2-r32.7.1" > docker_dli_run.sh
+    
+    chmod +x docker_dli_run.sh
+    
+    ./docker_dli_run.sh
+    
+    Then enter nvidia as the password, copy the link given in the first row, and paste it into a new tab. Then type dlinano to log in to the Jupyter Lab website. Open the classification_interactive.ipynb, dataset.py, utils.py, and all the folders. Then run all cells except for the last one in the classification_interactive.ipynb, and then click on all the 3 different categories, set epoxy to 10 for each, and train. Then test it out!
 2. All libraries are automatically downloaded in the code.
 
 [Demonstration video, I had to do YouTube because StreamLabs made my computer glitch](https://www.youtube.com/watch?v=Vn3zC-feVJA)
