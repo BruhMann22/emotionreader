@@ -10,7 +10,7 @@ First I had to create the camera, and identify it in my code [Imgur](https://img
 
 ## Running this project
 
-1. Explain how to open the project
-2. Make sure to include any required libraries that need to be installed for your project to run.
+1. Log in to the Jupyter Lab website, open the classification_interactive.ipynb, dataset.py, utils.py, and all the folders. Then run all cells except for the last one, and then click on all the 3 different categories, set epoxy to 10 for each, and train. Then test it out!
+2. All libraries are automatically downloaded in the code.
 
-[View a video explanation here](video link)
+[Demonstration video, I had to do YouTube because StreamLabs made my computer glitch](https://www.youtube.com/watch?v=Vn3zC-feVJA)
